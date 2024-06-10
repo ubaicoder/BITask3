@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' ,sans-serif;
+}
+body{
+    background-color: black;
+    color: white;
+}
+.c1{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(login-bg.jpeg);
+    background-position: center;
+    background-size: cover;
+    padding: 10px 8%;
+    position: relative;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+}
+.pic1{
+    width: 150px;
+    cursor: pointer;
+}
+.btn{
+    cursor: pointer;
+}
+.c2{
+    position: absolute;
+    text-align: center;
+    top: 45%;
+}
+.c2 h1{
+    font-weight: 900;
+    line-height: 1.2rem;
+    font-family: "Poppins", sans-serif; 
+    font-style: normal;
+}
+#ema{
+    width: 28%;
+    height: 80%;
+    border-radius: 5px;
+    background: transparent;
+    border: 1px solid grey;
+    padding: 5px;
+    padding-left: 20px;
+    color: white;
+}
+.c2 .btn{
+    height: 22%;
+    width: 20%;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    margin-left: 2px;
+    border-radius: 5px;
+    color: white;
+}
+.c2 h3{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.c2 p{
+    font-size: 1.3rem;
+}
+#second{
+    background: black;
+    color: white;
+    padding: 50px 12%;
+    font-size: 22px;
+}
+.row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 50px 0;
+}
+#second p{
+    width: 100%;
+    line-height: 1.4em;
+}
+#second h2{
+    font-family: "Poppins",sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.si video{
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+#third{
+    background: black;
+    color: white;
+    font-size: 22px;
+    padding: 50px 12%;
+}
+#third h2{
+    font-family: "Poppins",sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+#third p{
+    width: 100%;
+    line-height: 1.4rem;
+}
+
+.thi img{
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+#fourth{
+    background: black;
+    color: white;
+    font-size: 22px;
+    padding: 50px 12%;
+}
+#fourth h2{
+    font-family: 'Poppins',sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+#fourth p{
+    width: 100%;
+    line-height: 1.9rem;
+}
+.fouri img{
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+#fifth{
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 15px;
+    background: black;
+    color: white;
+}
+#fifth h2{
+    font-size: 40px;
+    font-weight: 800;
+    font-style: normal;
+    font-family: "Poppins",sans-serif;
+}
+.accordion{
+    margin: 60px auto;
+    width: 100%;
+}
+.accordion li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+.accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    cursor: pointer;
+    margin: 2px;
+    position: relative;
+}
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+input[type="radio"]{
+    display: none;
+}
+.accordion .content{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s , padding 0.5s;
+}
+.accordion input[type="radio"]:checked + label + .content{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+.c4 p{
+    font-size: 18px;
+}
+.c4 input{
+    max-height: 30%;
+    margin: 2px;
+}
+.c4 button{
+   width: 15%;
+   font-weight: 500;
+}
+#six{
+    background: black;
+    color: white;
+    font-size: 12px;
+    padding: 10px 12%;
+}
+#six a{
+    color: white;
+    display: block;
+    padding: 5px 0;
+}
+.a2{
+    display: inline;
+}
+
+
+
